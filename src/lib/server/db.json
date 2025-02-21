@@ -1,0 +1,62 @@
+{
+  "pokemons": [
+    {
+      "id": "25",
+      "name": "pikachu",
+      "type": "electric",
+      "description": "When these little creatures gather, they may create thunderstorms"
+    },
+    {
+      "id": 151,
+      "name": "mew",
+      "type": [
+        "psychic"
+      ],
+      "description": "So rare that it\nis still said to\nbe a mirage by\fmany experts. Only\na few people have\nseen it worldwide."
+    },
+    {
+      "id": 89,
+      "name": "muk",
+      "type": [
+        "poison"
+      ],
+      "description": "Thickly covered\nwith a filthy,\nvile sludge. It\fis so toxic, even\nits footprints\ncontain poison."
+    },
+    {
+      "id": 717,
+      "name": "yveltal",
+      "type": [
+        "dark",
+        "flying"
+      ],
+      "description": "When this legendary Pokémon’s wings and\ntail feathers spread wide and glow red,\nit absorbs the life force of living creatures."
+    },
+    {
+      "id": 249,
+      "name": "lugia",
+      "type": [
+        "psychic",
+        "flying"
+      ],
+      "description": "It is said that it\nquietly spends its\ntime deep at the\fbottom of the sea\nbecause its powers\nare too strong."
+    },
+    {
+      "id": 249,
+      "name": "lugia",
+      "type": [
+        "psychic",
+        "flying"
+      ],
+      "description": "It is said that it\nquietly spends its\ntime deep at the\fbottom of the sea\nbecause its powers\nare too strong."
+    },
+    {
+      "id": 249,
+      "name": "lugia",
+      "type": [
+        "psychic",
+        "flying"
+      ],
+      "description": "It is said that it\nquietly spends its\ntime deep at the\fbottom of the sea\nbecause its powers\nare too strong."
+    }
+  ]
+}

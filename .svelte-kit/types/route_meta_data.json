@@ -1,0 +1,7 @@
+{
+	"/": [],
+	"/pokemons": [
+		"src/routes/pokemons/+page.server.ts"
+	],
+	"/sobre": []
+}
