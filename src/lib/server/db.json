@@ -1,62 +1,50 @@
 {
   "pokemons": [
     {
-      "id": "25",
-      "name": "pikachu",
-      "type": "electric",
-      "description": "When these little creatures gather, they may create thunderstorms"
-    },
-    {
-      "id": 151,
-      "name": "mew",
-      "type": [
-        "psychic"
-      ],
-      "description": "So rare that it\nis still said to\nbe a mirage by\fmany experts. Only\na few people have\nseen it worldwide."
-    },
-    {
-      "id": 89,
-      "name": "muk",
-      "type": [
+      "id": "d9ed0820-7e08-45d2-9af8-7d21d139a031",
+      "nome": "muk",
+      "numero": 89,
+      "tipo": [
         "poison"
       ],
-      "description": "Thickly covered\nwith a filthy,\nvile sludge. It\fis so toxic, even\nits footprints\ncontain poison."
+      "fotoUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
+      "choroUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/89.ogg",
+      "descricao": "Thickly covered\nwith a filthy,\nvile sludge. It\fis so toxic, even\nits footprints\ncontain poison."
     },
     {
-      "id": 717,
-      "name": "yveltal",
-      "type": [
+      "id": "a890dc08-6be5-4ef0-83ef-21713b5872e6",
+      "nome": "lugia",
+      "numero": 249,
+      "tipo": [
+        "psychic",
+        "flying"
+      ],
+      "fotoUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
+      "choroUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/249.ogg",
+      "descricao": "It is said that it\nquietly spends its\ntime deep at the\fbottom of the sea\nbecause its powers\nare too strong."
+    },
+    {
+      "id": "08b422ae-597e-4408-ab44-1aa516e5ab88",
+      "nome": "mew",
+      "numero": 151,
+      "tipo": [
+        "psychic"
+      ],
+      "fotoUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+      "choroUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/151.ogg",
+      "descricao": "So rare that it\nis still said to\nbe a mirage by\fmany experts. Only\na few people have\nseen it worldwide."
+    },
+    {
+      "id": "6af1d082-ff7b-419b-a6c0-26201849e656",
+      "nome": "yveltal",
+      "numero": 717,
+      "tipo": [
         "dark",
         "flying"
       ],
-      "description": "When this legendary Pokémon’s wings and\ntail feathers spread wide and glow red,\nit absorbs the life force of living creatures."
-    },
-    {
-      "id": 249,
-      "name": "lugia",
-      "type": [
-        "psychic",
-        "flying"
-      ],
-      "description": "It is said that it\nquietly spends its\ntime deep at the\fbottom of the sea\nbecause its powers\nare too strong."
-    },
-    {
-      "id": 249,
-      "name": "lugia",
-      "type": [
-        "psychic",
-        "flying"
-      ],
-      "description": "It is said that it\nquietly spends its\ntime deep at the\fbottom of the sea\nbecause its powers\nare too strong."
-    },
-    {
-      "id": 249,
-      "name": "lugia",
-      "type": [
-        "psychic",
-        "flying"
-      ],
-      "description": "It is said that it\nquietly spends its\ntime deep at the\fbottom of the sea\nbecause its powers\nare too strong."
+      "fotoUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/717.png",
+      "choroUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/717.ogg",
+      "descricao": "When this legendary Pokémon’s wings and\ntail feathers spread wide and glow red,\nit absorbs the life force of living creatures."
     }
   ]
 }

@@ -12,7 +12,6 @@
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex space-x-8">
-            <a href="/" class="text-gray-600 hover:text-blue-600">Principal</a>
             <a href="/pokemons" class="text-gray-600 hover:text-blue-600">Pokemons</a>
             <a href="/sobre" class="text-gray-600 hover:text-blue-600">Sobre</a>
         </div>
@@ -34,7 +33,6 @@
             <!-- Mobile Menu -->
             {#if menuAberto}
             <div class="absolute top-16 left-0 w-full bg-white shadow-md md:hidden">
-                <a href="/" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">Principal</a>
                 <a href="/pokemons" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">Pokemons</a>
                 <a href="/sobre" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">Sobre</a>
             </div>

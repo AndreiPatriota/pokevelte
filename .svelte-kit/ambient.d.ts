@@ -26,7 +26,7 @@
  * ```
  */
 declare module '$env/static/private' {
-	export const PRIVATE_API_URL: string;
+	export const PRIVATE_POKEMONS_ENDPOINT: string;
 	export const NVM_INC: string;
 	export const TERM_PROGRAM: string;
 	export const NODE: string;
@@ -128,7 +128,7 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
-		PRIVATE_API_URL: string;
+		PRIVATE_POKEMONS_ENDPOINT: string;
 		NVM_INC: string;
 		TERM_PROGRAM: string;
 		NODE: string;
