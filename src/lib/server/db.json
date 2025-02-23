@@ -1,50 +1,28 @@
 {
   "pokemons": [
     {
-      "id": "d9ed0820-7e08-45d2-9af8-7d21d139a031",
-      "nome": "muk",
-      "numero": 89,
+      "id": "fb567c74-9e79-4c15-b4ff-1b07f2c2b440",
+      "nome": "articuno",
+      "numero": 144,
       "tipo": [
-        "poison"
-      ],
-      "fotoUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
-      "choroUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/89.ogg",
-      "descricao": "Thickly covered\nwith a filthy,\nvile sludge. It\fis so toxic, even\nits footprints\ncontain poison."
-    },
-    {
-      "id": "a890dc08-6be5-4ef0-83ef-21713b5872e6",
-      "nome": "lugia",
-      "numero": 249,
-      "tipo": [
-        "psychic",
+        "ice",
         "flying"
       ],
-      "fotoUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
-      "choroUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/249.ogg",
-      "descricao": "It is said that it\nquietly spends its\ntime deep at the\fbottom of the sea\nbecause its powers\nare too strong."
+      "fotoUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+      "choroUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/144.ogg",
+      "descricao": "A legendary bird\nPOKéMON that is\nsaid to appear to\fdoomed people who\nare lost in icy\nmountains."
     },
     {
-      "id": "08b422ae-597e-4408-ab44-1aa516e5ab88",
-      "nome": "mew",
-      "numero": 151,
+      "id": "a1e01085-aaee-499d-adcf-7d6a97526dd9",
+      "nome": "ho-oh",
+      "numero": 250,
       "tipo": [
-        "psychic"
-      ],
-      "fotoUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
-      "choroUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/151.ogg",
-      "descricao": "So rare that it\nis still said to\nbe a mirage by\fmany experts. Only\na few people have\nseen it worldwide."
-    },
-    {
-      "id": "6af1d082-ff7b-419b-a6c0-26201849e656",
-      "nome": "yveltal",
-      "numero": 717,
-      "tipo": [
-        "dark",
+        "fire",
         "flying"
       ],
-      "fotoUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/717.png",
-      "choroUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/717.ogg",
-      "descricao": "When this legendary Pokémon’s wings and\ntail feathers spread wide and glow red,\nit absorbs the life force of living creatures."
+      "fotoUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png",
+      "choroUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/250.ogg",
+      "descricao": "Legends claim this\nPOKéMON flies the\nworld's skies con­\ftinuously on its\nmagnificent seven-\ncolored wings."
     }
   ]
 }

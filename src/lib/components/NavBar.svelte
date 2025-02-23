@@ -1,5 +1,9 @@
 <script lang="ts">
     let menuAberto = $state(false);
+
+    function fechaMenu() {
+        menuAberto = false;
+    }
 </script>
   
 <nav class="bg-white shadow-md">
@@ -7,7 +11,7 @@
         <div class="flex justify-between h-16 items-center">
         <!-- Logo -->
         <div class="flex-shrink-0">
-            <a href="/" class="text-2xl font-bold text-blue-600">PokeSvelte</a>
+            <a href="/" class="text-2xl font-bold text-blue-600" onclick={fechaMenu}>PokeSvelte</a>
         </div>
 
         <!-- Desktop Menu -->
@@ -33,8 +37,8 @@
             <!-- Mobile Menu -->
             {#if menuAberto}
             <div class="absolute top-16 left-0 w-full bg-white shadow-md md:hidden">
-                <a href="/pokemons" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">Pokemons</a>
-                <a href="/sobre" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">Sobre</a>
+                <a href="/pokemons" class="block px-4 py-2 text-gray-600 hover:bg-blue-50" onclick={() => fechaMenu()}>Pokemons</a>
+                <a href="/sobre" class="block px-4 py-2 text-gray-600 hover:bg-blue-50" onclick={() => fechaMenu()}>Sobre</a>
             </div>
             {/if}
         </div>

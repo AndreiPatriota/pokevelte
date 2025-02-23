@@ -1,28 +1,38 @@
 import { PRIVATE_POKEMONS_ENDPOINT } from '$env/static/private';
-import type { PageServerLoad, Actions } from './$types';
+import { fail } from '@sveltejs/kit';
+import type { Actions } from './$types';
 import Pokedex from 'pokedex-promise-v2';
-// import crypto from 'crypto';
 
 const P = new Pokedex();
 
-export const load: PageServerLoad = async ({ params }) => {
-  const response = await fetch(PRIVATE_POKEMONS_ENDPOINT);
-  const payload: App.Poke[] = await response.json();
-
-  // console.log(`payload: ${JSON.stringify(payload, null, 2)}`);
-
-  return { mensage: 'olaaaarrrrrr', payload };
-};
-
 export const actions = {
   default: async ({ request }) => {
-    // get form data
+    // dado formulário
     const data = await request.formData();
     const nomePokemon = data.get('nome-pokemon')?.toString() || '';
 
+    // evita duplicado
+    let response = await fetch(
+      PRIVATE_POKEMONS_ENDPOINT + `?nome_=${nomePokemon}`
+    );
+    if (!response) {
+      return { success: false, mensagem: 'Pokemon já existe' };
+    }
+
     // call pokeapi
-    const pokemon = await P.getPokemonByName(nomePokemon);
-    const especiePokemon = await P.getPokemonSpeciesByName(nomePokemon);
+    let pokemon: Pokedex.Pokemon;
+    let especiePokemon: Pokedex.PokemonSpecies;
+    try {
+      pokemon = await P.getPokemonByName(nomePokemon);
+      especiePokemon = await P.getPokemonSpeciesByName(nomePokemon);
+    } catch (error) {
+      console.log(error);
+
+      return {
+        success: false,
+        mensagem: 'Nã consegui encontrar esse pokemon X(',
+      };
+    }
 
     // build record
     const umPokemon: App.Poke = {
@@ -38,11 +48,11 @@ export const actions = {
     };
 
     // post to endpoint
-    let response = await fetch(PRIVATE_POKEMONS_ENDPOINT, {
+    response = await fetch(PRIVATE_POKEMONS_ENDPOINT, {
       method: 'POST',
       body: JSON.stringify(umPokemon),
     });
 
-    return { success: true };
+    return { success: true, mensagem: 'Pokemon cadastrado com sucesso XD.' };
   },
 } satisfies Actions;

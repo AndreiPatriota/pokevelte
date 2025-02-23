@@ -10,7 +10,8 @@
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"serve": "json-server --watch ./src/lib/server/db.json"
+		"server": "json-server --watch ./src/lib/server/db.json",
+		"server-help": "json-server --help"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^4.0.0",
@@ -21,8 +22,10 @@
 		"clsx": "^2.1.1",
 		"formsnap": "^1.0.1",
 		"lucide-svelte": "^0.475.0",
+		"mode-watcher": "^0.5.1",
 		"svelte": "^5.0.0",
 		"svelte-check": "^4.0.0",
+		"svelte-sonner": "^0.3.28",
 		"sveltekit-superforms": "^2.23.1",
 		"tailwind-merge": "^3.0.1",
 		"tailwind-variants": "^0.3.1",
