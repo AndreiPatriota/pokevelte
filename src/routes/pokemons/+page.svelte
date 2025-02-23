@@ -19,28 +19,33 @@
         listadePokemons = listadePokemons.filter(p => p.id !== id);
     }
 
-    $effect(()=>{
-        if(form) {
-            if(form.success) {
-                toast.success("Parabéns", {
-                    description: form.mensagem,
-                    action: {
-                        label: "Fechar",
-                        onClick: () => console.info("Undo")
-                    }
-                })
-            } else {
-                toast.error("Algo de errado não está certo =/.", {
-                    description: form.mensagem,
-                    action: {
-                        label: "Fechar",
-                        onClick: () => console.info("Undo")
-                    }
-                }   
-                )
+    $effect(() => {
+        if(!form) {
+            return;
+        }
+
+        if(form.success) {
+            toast.success("Parabéns", {
+                description: form.mensagem,
+                action: {
+                    label: "Fechar",
+                    onClick: () => console.info("Undo")
+                }
             }
+            )
+            return;
         }
-        }
+
+        toast.error("Algo de errado não está certo =/.", {
+            description: form.mensagem,
+            action: {
+                label: "Fechar",
+                onClick: () => console.info("Undo")
+            }
+        }   
+        )
+        return;
+    }
     )
 </script>
 

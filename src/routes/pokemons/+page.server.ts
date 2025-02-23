@@ -13,13 +13,14 @@ export const actions = {
 
     // evita duplicado
     let response = await fetch(
-      PRIVATE_POKEMONS_ENDPOINT + `?nome_=${nomePokemon}`
+      PRIVATE_POKEMONS_ENDPOINT + `?nome=${nomePokemon}`
     );
-    if (!response) {
+    const retornados = await response.json();
+    if (retornados.length !== 0) {
       return { success: false, mensagem: 'Pokemon já existe' };
     }
 
-    // call pokeapi
+    // chama pokeapi
     let pokemon: Pokedex.Pokemon;
     let especiePokemon: Pokedex.PokemonSpecies;
     try {
@@ -34,7 +35,7 @@ export const actions = {
       };
     }
 
-    // build record
+    // constroi record
     const umPokemon: App.Poke = {
       id: crypto.randomUUID(),
       nome: especiePokemon.name,
@@ -47,7 +48,7 @@ export const actions = {
       )?.flavor_text,
     };
 
-    // post to endpoint
+    // posta para o endpoint
     response = await fetch(PRIVATE_POKEMONS_ENDPOINT, {
       method: 'POST',
       body: JSON.stringify(umPokemon),
