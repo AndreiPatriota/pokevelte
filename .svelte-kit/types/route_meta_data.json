@@ -1,5 +1,11 @@
 {
 	"/": [],
+	"/api/auth/logout": [
+		"src/routes/api/auth/logout/+server.ts"
+	],
+	"/login": [
+		"src/routes/login/+page.server.ts"
+	],
 	"/pokemons": [
 		"src/routes/pokemons/+page.ts",
 		"src/routes/pokemons/+page.server.ts"

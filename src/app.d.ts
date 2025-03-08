@@ -11,6 +11,11 @@ declare global {
       choroUrl: string;
       descricao?: string;
     }
+    interface Usuario {
+      nome: string;
+      senha: string;
+      credenciais: string[];
+    }
   }
 }
 

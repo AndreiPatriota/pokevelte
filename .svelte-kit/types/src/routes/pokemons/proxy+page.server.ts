@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { PRIVATE_POKEMONS_ENDPOINT } from '$env/static/private';
 import type { PageServerLoad } from './$types';
 import type { Actions } from './$types';
@@ -6,7 +7,7 @@ import { redirect } from '@sveltejs/kit';
 
 const P = new Pokedex();
 
-export const load: PageServerLoad = async ({ params, cookies, locals }) => {
+export const load = async ({ params, cookies, locals }: Parameters<PageServerLoad>[0]) => {
   if (!locals.user) {
     redirect(302, '/login');
   }

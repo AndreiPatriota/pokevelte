@@ -1,3 +1,14 @@
 {
-  "pokemons": []
+  "pokemons": [],
+  "usuarios": [
+    {
+      "nome": "andrei",
+      "senha": "1234",
+      "credenciais": [
+        "admin",
+        "user"
+      ],
+      "id": "2e3f"
+    }
+  ]
 }

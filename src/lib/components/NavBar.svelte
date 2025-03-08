@@ -18,6 +18,8 @@
         <div class="hidden md:flex space-x-8">
             <a href="/pokemons" class="text-gray-600 hover:text-blue-600">Pokemons</a>
             <a href="/sobre" class="text-gray-600 hover:text-blue-600">Sobre</a>
+            <a href="/login" class="text-gray-600 hover:text-blue-600">Login</a>
+            <a href="/api/auth/logout" class="text-gray-600 hover:text-blue-600">Logout</a>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -39,6 +41,8 @@
             <div class="absolute top-16 left-0 w-full bg-white shadow-md md:hidden">
                 <a href="/pokemons" class="block px-4 py-2 text-gray-600 hover:bg-blue-50" onclick={() => fechaMenu()}>Pokemons</a>
                 <a href="/sobre" class="block px-4 py-2 text-gray-600 hover:bg-blue-50" onclick={() => fechaMenu()}>Sobre</a>
+                <a href="/login" class="block px-4 py-2 text-gray-600 hover:bg-blue-50" onclick={() => fechaMenu()}>Login</a>
+                <a href="/api/auth/logout" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">Logout</a>
             </div>
             {/if}
         </div>
