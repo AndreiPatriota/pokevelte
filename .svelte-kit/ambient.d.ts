@@ -28,6 +28,7 @@
 declare module '$env/static/private' {
 	export const PRIVATE_POKEMONS_ENDPOINT: string;
 	export const PRIVATE_USERS_ENDPOINT: string;
+	export const PRIVATE_JWT_SECRET: string;
 	export const NVM_INC: string;
 	export const TERM_PROGRAM: string;
 	export const NODE: string;
@@ -131,6 +132,7 @@ declare module '$env/dynamic/private' {
 	export const env: {
 		PRIVATE_POKEMONS_ENDPOINT: string;
 		PRIVATE_USERS_ENDPOINT: string;
+		PRIVATE_JWT_SECRET: string;
 		NVM_INC: string;
 		TERM_PROGRAM: string;
 		NODE: string;

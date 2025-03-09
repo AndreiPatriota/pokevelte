@@ -2,13 +2,14 @@
 	import { Input } from "$lib/components/ui/input/index.js";
 	import { Label } from "$lib/components/ui/label/index.js";
 	import { Button } from "$lib/components/ui/button/index.js";
-  	import type { PageProps } from "../$types";
+	import type { PageProps } from './$types';;
 	import { toast } from "svelte-sonner";
+  import { goto } from "$app/navigation";
 
 
 	let { data, form }:PageProps = $props();
 
-	$effect(() => {
+	$effect( () => {
 		if(!form) {
 			return
 		}
@@ -20,8 +21,8 @@
 					label: "Fechar",
 					onClick: () => console.info("Undo")
 				}
-				}	   
-				)
+			}	   
+			)
         	return;
 		}
 
@@ -33,7 +34,9 @@
                 }
             }
             )
-        return;
+        goto('/');
+
+		return;
 	})
   </script>
 

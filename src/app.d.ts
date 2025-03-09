@@ -16,6 +16,9 @@ declare global {
       senha: string;
       credenciais: string[];
     }
+    interface Locals {
+      user: Usuario | null;
+    }
   }
 }
 
