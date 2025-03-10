@@ -9,6 +9,14 @@
         "user"
       ],
       "id": "2e3f"
+    },
+    {
+      "id": "5268",
+      "nome": "Blondel",
+      "senha": "1234",
+      "credenciais": [
+        "user"
+      ]
     }
   ]
 }
