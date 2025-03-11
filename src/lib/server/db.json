@@ -17,6 +17,14 @@
       "credenciais": [
         "user"
       ]
+    },
+    {
+      "id": "0047",
+      "nome": "kitty",
+      "senha": "1234",
+      "credenciais": [
+        "user"
+      ]
     }
   ]
 }

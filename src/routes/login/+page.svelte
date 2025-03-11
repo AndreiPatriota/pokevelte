@@ -5,10 +5,13 @@
 	import type { PageProps } from './$types';;
 	import { toast } from "svelte-sonner";
   	import { goto } from "$app/navigation";
+  	import { getContext } from "svelte";
 
 
 	let { data, form }:PageProps = $props();
 	let ehNovo = $state(false);
+	// let { logado } = getContext('context');
+	let context:{ logado: boolean } = getContext('context');
 
 	$effect( () => {
 		if(!form) {
@@ -40,7 +43,8 @@
 			ehNovo = false;
 			return;
 		}
-	
+
+		context.logado = true;
         goto('/');
 
 		return;

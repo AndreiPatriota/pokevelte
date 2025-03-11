@@ -1,4 +1,9 @@
 <script lang="ts">
+
+    interface Props {
+        estaLogado : boolean
+    }
+    let { estaLogado }:Props  = $props();
     let menuAberto = $state(false);
 
     function fechaMenu() {
@@ -14,15 +19,18 @@
             <a href="/" class="text-2xl font-bold text-blue-600" onclick={fechaMenu}>PokeSvelte</a>
         </div>
 
-        <!-- Desktop Menu -->
+        <!-- Tela Grande -->
         <div class="hidden md:flex space-x-8">
             <a href="/pokemons" class="text-gray-600 hover:text-blue-600">Pokemons</a>
             <a href="/sobre" class="text-gray-600 hover:text-blue-600">Sobre</a>
-            <a href="/login" class="text-gray-600 hover:text-blue-600">Login</a>
-            <a href="/api/auth/logout" class="text-gray-600 hover:text-blue-600">Logout</a>
+            {#if estaLogado}
+                <a href="/api/auth/logout" class="text-gray-600 hover:text-blue-600">Sair</a>
+            {:else}
+                <a href="/login" class="text-gray-600 hover:text-blue-600">Entrar</a>
+            {/if}
         </div>
 
-        <!-- Mobile Menu Button -->
+        <!-- Hamburguer -->
         <div class="md:hidden">
             <button onclick={() => menuAberto = !menuAberto} class="text-gray-600 hover:text-blue-600 focus:outline-none">
             {#if !menuAberto}
@@ -36,13 +44,17 @@
             {/if}
             </button>
 
-            <!-- Mobile Menu -->
+            <!-- Tela Pequena -->
             {#if menuAberto}
             <div class="absolute top-16 left-0 w-full bg-white shadow-md md:hidden">
                 <a href="/pokemons" class="block px-4 py-2 text-gray-600 hover:bg-blue-50" onclick={() => fechaMenu()}>Pokemons</a>
                 <a href="/sobre" class="block px-4 py-2 text-gray-600 hover:bg-blue-50" onclick={() => fechaMenu()}>Sobre</a>
-                <a href="/login" class="block px-4 py-2 text-gray-600 hover:bg-blue-50" onclick={() => fechaMenu()}>Login</a>
-                <a href="/api/auth/logout" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">Logout</a>
+                {#if estaLogado}
+                    <a href="/api/auth/logout" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">Sair</a>
+                {:else}
+                    <a href="/login" class="block px-4 py-2 text-gray-600 hover:bg-blue-50" onclick={() => fechaMenu()}>Entrar</a>
+                {/if}
+
             </div>
             {/if}
         </div>
