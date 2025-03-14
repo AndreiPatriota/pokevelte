@@ -8,10 +8,9 @@
   	import { getContext } from "svelte";
 
 
-	let { data, form }:PageProps = $props();
+	let { form }:PageProps = $props();
 	let ehNovo = $state(false);
-	// let { logado } = getContext('context');
-	let context:{ logado: boolean } = getContext('context');
+	let ctx:{ logado: boolean } = getContext('context');
 
 	$effect( () => {
 		if(!form) {
@@ -44,7 +43,7 @@
 			return;
 		}
 
-		context.logado = true;
+		ctx.logado = true;
         goto('/');
 
 		return;

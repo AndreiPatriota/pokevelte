@@ -6,7 +6,7 @@ import { redirect } from '@sveltejs/kit';
 
 const P = new Pokedex();
 
-export const load: PageServerLoad = async ({ params, cookies, locals }) => {
+export const load: PageServerLoad = async ({ locals }) => {
   if (!locals.user) {
     redirect(302, '/login');
   }

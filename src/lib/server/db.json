@@ -1,27 +1,54 @@
 {
-  "pokemons": [],
-  "usuarios": [
+  "pokemons": [
     {
-      "nome": "andrei",
-      "senha": "1234",
-      "credenciais": [
-        "admin",
-        "user"
+      "id": "47ff37de-b7dd-4294-a72d-cabd2c7b2835",
+      "nome": "gengar",
+      "numero": 94,
+      "tipo": [
+        "ghost",
+        "poison"
       ],
-      "id": "2e3f"
+      "fotoUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
+      "choroUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/94.ogg",
+      "descricao": "Under a full moon,\nthis POKéMON\nlikes to mimic\fthe shadows of\npeople and laugh\nat their fright."
     },
     {
-      "id": "5268",
-      "nome": "Blondel",
-      "senha": "1234",
+      "id": "09e2f972-f560-4a34-a645-10ee8bfe5285",
+      "nome": "mewtwo",
+      "numero": 150,
+      "tipo": [
+        "psychic"
+      ],
+      "fotoUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+      "choroUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/150.ogg",
+      "descricao": "It was created by\na scientist after\nyears of horrific\fgene splicing and\nDNA engineering\nexperiments."
+    },
+    {
+      "id": "241d1c68-0707-4535-8742-4c356a3f571c",
+      "nome": "bulbasaur",
+      "numero": 1,
+      "tipo": [
+        "grass",
+        "poison"
+      ],
+      "fotoUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "choroUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1.ogg",
+      "descricao": "A strange seed was\nplanted on its\nback at birth.\fThe plant sprouts\nand grows with\nthis POKéMON."
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "e46d",
+      "nome": "andrei",
+      "senha": "$2b$10$jxugAl5yhLVyUVqv4MTmq.k/eT4B7fc0lY61.6.ww7jxonW0ds54C",
       "credenciais": [
         "user"
       ]
     },
     {
-      "id": "0047",
+      "id": "c9bc",
       "nome": "kitty",
-      "senha": "1234",
+      "senha": "$2b$10$gm4vTqkLDsUvhoTAYzkLxu.EqgLTvDH.SPHKDk7rvj5c6lh9luU7K",
       "credenciais": [
         "user"
       ]

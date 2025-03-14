@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { Actions } from './$types';
 import {
   PRIVATE_USERS_ENDPOINT,
@@ -6,7 +7,7 @@ import {
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 
-export const actions: Actions = {
+export const actions = {
   login: async ({ cookies, request }) => {
     // dados formulário
     const data = await request.formData();
@@ -106,3 +107,4 @@ export const actions: Actions = {
     };
   },
 } satisfies Actions;
+;null as any as Actions;

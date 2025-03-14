@@ -60,7 +60,7 @@
 {#if listadePokemons.length === 0}
     <p class="leading-7 [&:not(:first-child)]:mt-6 text-center">Nenhum Pokemon foi cadastrado</p>
 {:else}
-    <div class="mt-4 max-h-[500px] space-y-10 overflow-y-auto">
+    <div class="mt-4 max-h-[700px] space-y-10 overflow-y-auto">
         {#each listadePokemons as poke (poke.id)}
             <Card.Root class="w-3/5 mx-auto min-w-[430px]">
                 <Card.Header class="flex flex-row justify-between">

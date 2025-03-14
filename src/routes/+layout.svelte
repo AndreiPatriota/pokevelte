@@ -4,18 +4,21 @@
   	import NavBar from '$lib/components/NavBar.svelte';
   	import { setContext, type Snippet } from 'svelte';
 
-	let { children } = $props();
+	interface DataProp {
+		logado: boolean,
+	}
 
-	let context = $state({logado: false});
+	let { data, children }:{data:DataProp, children: Snippet<[]>} = $props();
 
-	setContext('context', context);
+	let ctx = $state({logado: data.logado});
+	setContext('context', ctx);
 
 </script>
 
 
 <div class="max-h-screen overflow-y-hidden">
 	<Toaster />
-	<NavBar estaLogado={context.logado}/>
+	<NavBar estaLogado={ctx.logado}/>
 	<main>
 		{@render children()}
 	</main>

@@ -1,16 +1,22 @@
 {
 	"/": [
-		"src/routes/+page.server.ts"
+		"src/routes/+page.server.ts",
+		"src/routes/+layout.server.ts",
+		"src/routes/+layout.server.ts"
 	],
 	"/api/auth/logout": [
 		"src/routes/api/auth/logout/+server.ts"
 	],
 	"/login": [
-		"src/routes/login/+page.server.ts"
+		"src/routes/login/+page.server.ts",
+		"src/routes/+layout.server.ts"
 	],
 	"/pokemons": [
 		"src/routes/pokemons/+page.ts",
-		"src/routes/pokemons/+page.server.ts"
+		"src/routes/pokemons/+page.server.ts",
+		"src/routes/+layout.server.ts"
 	],
-	"/sobre": []
+	"/sobre": [
+		"src/routes/+layout.server.ts"
+	]
 }
