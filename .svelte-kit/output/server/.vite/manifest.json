@@ -1,0 +1,241 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "name": "internal",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_internal.js"
+    ]
+  },
+  "_Toaster.BWY6fThA.css": {
+    "file": "_app/immutable/assets/Toaster.BWY6fThA.css",
+    "src": "_Toaster.BWY6fThA.css"
+  },
+  "_Toaster.svelte_svelte_type_style_lang.js": {
+    "file": "chunks/Toaster.svelte_svelte_type_style_lang.js",
+    "name": "Toaster.svelte_svelte_type_style_lang",
+    "imports": [
+      "_index3.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Toaster.BWY6fThA.css"
+    ]
+  },
+  "_client.js": {
+    "file": "chunks/client.js",
+    "name": "client",
+    "imports": [
+      "_exports.js",
+      "_index3.js",
+      "_index.js"
+    ]
+  },
+  "_equality.js": {
+    "file": "chunks/equality.js",
+    "name": "equality"
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js",
+    "name": "exports"
+  },
+  "_index-server.js": {
+    "file": "chunks/index-server.js",
+    "name": "index-server",
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "_index.js": {
+    "file": "chunks/index.js",
+    "name": "index"
+  },
+  "_index2.js": {
+    "file": "chunks/index2.js",
+    "name": "index"
+  },
+  "_index3.js": {
+    "file": "chunks/index3.js",
+    "name": "index",
+    "imports": [
+      "_index.js",
+      "_equality.js"
+    ]
+  },
+  "_index4.js": {
+    "file": "chunks/index4.js",
+    "name": "index",
+    "imports": [
+      "_index.js",
+      "_index3.js"
+    ]
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "name": "internal",
+    "imports": [
+      "_index.js",
+      "_equality.js"
+    ],
+    "dynamicImports": [
+      "src/hooks.server.ts"
+    ]
+  },
+  "_private.js": {
+    "file": "chunks/private.js",
+    "name": "private"
+  },
+  "_public.js": {
+    "file": "chunks/public.js",
+    "name": "public"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "name": "entries/fallbacks/error.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_client.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "name": "index",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_internal.js",
+      "_index2.js",
+      "_exports.js",
+      "_index3.js"
+    ]
+  },
+  "src/hooks.server.ts": {
+    "file": "chunks/hooks.server.js",
+    "name": "hooks.server",
+    "src": "src/hooks.server.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_private.js"
+    ]
+  },
+  "src/lib/fonts/Poppins-Regular.ttf": {
+    "file": "_app/immutable/assets/Poppins-Regular.CTKNfV9P.ttf",
+    "src": "src/lib/fonts/Poppins-Regular.ttf"
+  },
+  "src/lib/fonts/Roboto-Regular.ttf": {
+    "file": "_app/immutable/assets/Roboto-Regular.CN_pkOMA.ttf",
+    "src": "src/lib/fonts/Roboto-Regular.ttf"
+  },
+  "src/routes/+layout.server.ts": {
+    "file": "entries/pages/_layout.server.ts.js",
+    "name": "entries/pages/_layout.server.ts",
+    "src": "src/routes/+layout.server.ts",
+    "isEntry": true
+  },
+  "src/routes/+layout.svelte": {
+    "file": "entries/pages/_layout.svelte.js",
+    "name": "entries/pages/_layout.svelte",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_index-server.js",
+      "_Toaster.svelte_svelte_type_style_lang.js",
+      "_index3.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.F9IemHfz.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/Poppins-Regular.CTKNfV9P.ttf",
+      "_app/immutable/assets/Roboto-Regular.CN_pkOMA.ttf"
+    ]
+  },
+  "src/routes/+page.server.ts": {
+    "file": "entries/pages/_page.server.ts.js",
+    "name": "entries/pages/_page.server.ts",
+    "src": "src/routes/+page.server.ts",
+    "isEntry": true
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "name": "entries/pages/_page.svelte",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "src/routes/api/auth/logout/+server.ts": {
+    "file": "entries/endpoints/api/auth/logout/_server.ts.js",
+    "name": "entries/endpoints/api/auth/logout/_server.ts",
+    "src": "src/routes/api/auth/logout/+server.ts",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/login/+page.server.ts": {
+    "file": "entries/pages/login/_page.server.ts.js",
+    "name": "entries/pages/login/_page.server.ts",
+    "src": "src/routes/login/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_private.js"
+    ]
+  },
+  "src/routes/login/+page.svelte": {
+    "file": "entries/pages/login/_page.svelte.js",
+    "name": "entries/pages/login/_page.svelte",
+    "src": "src/routes/login/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_index4.js",
+      "_Toaster.svelte_svelte_type_style_lang.js",
+      "_client.js"
+    ]
+  },
+  "src/routes/pokemons/+page.server.ts": {
+    "file": "entries/pages/pokemons/_page.server.ts.js",
+    "name": "entries/pages/pokemons/_page.server.ts",
+    "src": "src/routes/pokemons/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_private.js",
+      "_index2.js"
+    ]
+  },
+  "src/routes/pokemons/+page.svelte": {
+    "file": "entries/pages/pokemons/_page.svelte.js",
+    "name": "entries/pages/pokemons/_page.svelte",
+    "src": "src/routes/pokemons/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_public.js",
+      "_Toaster.svelte_svelte_type_style_lang.js",
+      "_index4.js",
+      "_index3.js",
+      "_index-server.js"
+    ]
+  },
+  "src/routes/pokemons/+page.ts": {
+    "file": "entries/pages/pokemons/_page.ts.js",
+    "name": "entries/pages/pokemons/_page.ts",
+    "src": "src/routes/pokemons/+page.ts",
+    "isEntry": true,
+    "imports": [
+      "_public.js"
+    ]
+  },
+  "src/routes/sobre/+page.svelte": {
+    "file": "entries/pages/sobre/_page.svelte.js",
+    "name": "entries/pages/sobre/_page.svelte",
+    "src": "src/routes/sobre/+page.svelte",
+    "isEntry": true
+  }
+}

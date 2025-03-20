@@ -8,9 +8,25 @@
     import * as Avatar from "$lib/components/ui/avatar";
     import Trash from "lucide-svelte/icons/trash";
     import { Badge } from "$lib/components/ui/badge";
+    import { enhance } from '$app/forms'
+    // import { applyAction, deserialize } from '$app/forms';
+    // import type { ActionResult } from '@sveltejs/kit';
+    // import { invalidateAll, goto } from '$app/navigation';
 
     let { data, form }: PageProps = $props();
     let listadePokemons = $state([...data.payload]);
+
+    function delay(ms: number) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function adicionaPokemon() {
+        await delay(3000);
+        const reponse = await fetch(PUBLIC_POKEMONS_ENDPOINT);
+        const pokemons: App.Poke[] = await reponse.json()
+
+        listadePokemons = pokemons;
+    }
 
     async function deletaPokemon(id: string) {
         const reponse = await fetch(PUBLIC_POKEMONS_ENDPOINT + `/${id}`,{
@@ -51,7 +67,7 @@
 </script>
 
 <div class="flex items-center justify-center mt-5">
-    <form class="flex w-full max-w-sm items-center space-x-2" method="POST" action="/pokemons">
+    <form class="flex w-full max-w-sm items-center space-x-2" method="POST" action="/pokemons" use:enhance onsubmit={adicionaPokemon}>
         <Input type="text" name="nome-pokemon" placeholder="Digite o nome do Pokemon..." />
         <Button type="submit">Busca</Button>
     </form>

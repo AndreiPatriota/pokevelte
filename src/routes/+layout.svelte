@@ -16,7 +16,7 @@
 </script>
 
 
-<div class="max-h-screen overflow-y-hidden">
+<div class="max-h-screen overflow-y-hidden font-geral">
 	<Toaster />
 	<NavBar estaLogado={ctx.logado}/>
 	<main>

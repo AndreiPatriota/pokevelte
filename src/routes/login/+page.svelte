@@ -64,7 +64,7 @@
 			<Label for="senha-confirma">Confirma Senha</Label>
 			<Input type="password" id="senha-confirma" placeholder="Confirma senha..." name="senha-confirma"/>
 		</div>
-		<Button type="submit" class="w-24">Signin</Button>
+		<Button type="submit" class="botao-acesso">Signin</Button>
 	</form>
 
 	<button onclick={() => ehNovo = false} class="mt-20 border-none text-blue-500 hover:text-red-500 block mx-auto">Já tem cadastro?</button>
@@ -78,7 +78,7 @@
 			<Label for="senha">Senha</Label>
 			<Input type="password" id="senha" placeholder="Senha..." name="senha"/>
 		</div>
-		<Button type="submit" class="w-24">Login</Button>
+		<Button type="submit" class="botao-acesso">Login</Button>
 	</form>
 
 	<button onclick={() => ehNovo = true} class="mt-20 border-none text-blue-500 hover:text-red-500 block mx-auto">Ainda não tem cadastro?</button>

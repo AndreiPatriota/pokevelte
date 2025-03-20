@@ -4,6 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'geral';
+  src: url('./lib/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'marcado';
+  src: url('./lib/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -77,4 +91,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.botao-acesso {
+  @apply w-24 font-marcado block mx-auto;
 }

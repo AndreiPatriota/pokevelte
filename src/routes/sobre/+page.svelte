@@ -1,1 +1,1 @@
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, aliquam hic doloremque ipsam, voluptas commodi velit corrupti tempora expedita voluptate harum ut eum quod, labore illum asperiores saepe assumenda debitis.</p>
+<p class="text-justify px-14 mx-auto mt-10 lg:px-56">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, aliquam hic doloremque ipsam, voluptas commodi velit corrupti tempora expedita voluptate harum ut eum quod, labore illum asperiores saepe assumenda debitis.</p>

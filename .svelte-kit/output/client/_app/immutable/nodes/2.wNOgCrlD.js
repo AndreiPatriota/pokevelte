@@ -1,0 +1,1 @@
+import{t as s,a as o}from"../chunks/BtqdExSN.js";import{p,t as m,a as c,c as n,r as f}from"../chunks/C1LSM2rT.js";import{s as l}from"../chunks/rzphPzYm.js";var h=s('<h1 class="text-center text-lg mt-24"> </h1>');function u(r,a){p(a,!0);var t=h(),e=n(t);f(t),m(()=>l(e,`Olaaaarrrrrrrrr, ${a.data.nome??""}`)),o(r,t),c()}export{u as component};
