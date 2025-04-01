@@ -29,7 +29,11 @@ export const actions = {
     );
     const retornados = await response.json();
     if (retornados.length !== 0) {
-      return { success: false, mensagem: 'Pokemon já existe' };
+      return {
+        success: false,
+        mensagem: 'Pokemon já existe',
+        pokemon: null,
+      };
     }
 
     // chama pokeapi
@@ -44,6 +48,7 @@ export const actions = {
       return {
         success: false,
         mensagem: 'Nã consegui encontrar esse pokemon X(',
+        pokemon: null,
       };
     }
 
@@ -66,6 +71,10 @@ export const actions = {
       body: JSON.stringify(umPokemon),
     });
 
-    return { success: true, mensagem: 'Pokemon cadastrado com sucesso XD.' };
+    return {
+      success: true,
+      mensagem: 'Pokemon cadastrado com sucesso XD.',
+      pokemon: umPokemon,
+    };
   },
 } satisfies Actions;

@@ -1,7 +1,19 @@
 {
   "pokemons": [
     {
-      "id": "5064c3d4-4a98-4853-85ab-78dcab8cb4da",
+      "id": "d333cccf-6638-40f1-a03f-814fcd97b82a",
+      "nome": "scizor",
+      "numero": 212,
+      "tipo": [
+        "bug",
+        "steel"
+      ],
+      "fotoUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/212.png",
+      "choroUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/212.ogg",
+      "descricao": "It has a steel-hard body. It\nintimidates foes by upraising its\neye-patterned pincers."
+    },
+    {
+      "id": "e263a61d-637d-47e5-9a74-630511869676",
       "nome": "lugia",
       "numero": 249,
       "tipo": [
@@ -11,6 +23,17 @@
       "fotoUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
       "choroUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/249.ogg",
       "descricao": "It is said that it\nquietly spends its\ntime deep at the\fbottom of the sea\nbecause its powers\nare too strong."
+    },
+    {
+      "id": "ad31625e-d6b4-44af-86e1-c2b60b4b1396",
+      "nome": "pichu",
+      "numero": 172,
+      "tipo": [
+        "electric"
+      ],
+      "fotoUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png",
+      "choroUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/172.ogg",
+      "descricao": "It is not yet\nskilled at storing\nelectricity.\fIt may send out a\njolt if amused\nor startled."
     }
   ],
   "usuarios": [

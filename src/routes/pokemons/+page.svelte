@@ -9,9 +9,6 @@
     import Trash from "lucide-svelte/icons/trash";
     import { Badge } from "$lib/components/ui/badge";
     import { enhance } from '$app/forms'
-    // import { applyAction, deserialize } from '$app/forms';
-    // import type { ActionResult } from '@sveltejs/kit';
-    // import { invalidateAll, goto } from '$app/navigation';
 
     let { data, form }: PageProps = $props();
     let listadePokemons = $state([...data.payload]);
@@ -21,11 +18,15 @@
     }
 
     async function adicionaPokemon() {
-        await delay(3000);
-        const reponse = await fetch(PUBLIC_POKEMONS_ENDPOINT);
-        const pokemons: App.Poke[] = await reponse.json()
+        await delay(1000);
 
-        listadePokemons = pokemons;
+        if(!form) {
+            return;
+        }
+
+        if(form.pokemon) {
+            listadePokemons = [form.pokemon, ...listadePokemons]
+        }
     }
 
     async function deletaPokemon(id: string) {
@@ -66,45 +67,49 @@
     )
 </script>
 
-<div class="flex items-center justify-center mt-5">
-    <form class="flex w-full max-w-sm items-center space-x-2" method="POST" action="/pokemons" use:enhance onsubmit={adicionaPokemon}>
-        <Input type="text" name="nome-pokemon" placeholder="Digite o nome do Pokemon..." />
-        <Button type="submit">Busca</Button>
-    </form>
-</div>
-
-{#if listadePokemons.length === 0}
-    <p class="leading-7 [&:not(:first-child)]:mt-6 text-center">Nenhum Pokemon foi cadastrado</p>
-{:else}
-    <div class="mt-4 max-h-[700px] space-y-10 overflow-y-auto">
-        {#each listadePokemons as poke (poke.id)}
-            <Card.Root class="w-3/5 mx-auto min-w-[430px]">
-                <Card.Header class="flex flex-row justify-between">
-                    <Avatar.Root>
-                        <Avatar.Image src={poke.fotoUrl} alt={"imagem " + poke.nome} />
-                        <Avatar.Fallback>{poke.nome.slice(0,2)}</Avatar.Fallback>
-                    </Avatar.Root>
-                    <div>
-                        <Card.Title>{poke.nome}</Card.Title>
-                        <Card.Description>{poke.tipo.reduce((p, s) => p + '/' + s)}</Card.Description>
-                    </div>
-                    <div>
-                        <audio controls>
-                            <source src={poke.choroUrl} type="audio/ogg"/>
-                            <Badge>Badge</Badge>
-                        </audio>
-                    </div>
-                </Card.Header>
-                <Card.Content>
-                    <p>{poke.descricao}</p>
-                </Card.Content>
-                <Card.Footer class="flex justify-center">
-                    <Button onclick={() => deletaPokemon(poke.id)}>
-                        <Trash class="h-4 w-4" />
-                    </Button>
-                </Card.Footer>
-            </Card.Root>
-        {/each}
+<section id="form-add-pokemon">
+    <div class="flex items-center justify-center mt-5">
+        <form class="flex w-full max-w-sm items-center space-x-2" method="POST" action="/pokemons" use:enhance onsubmit={adicionaPokemon}>
+            <Input type="text" name="nome-pokemon" placeholder="Digite o nome do Pokemon..." />
+            <Button type="submit">Busca</Button>
+        </form>
     </div>
-{/if}
+</section>
+
+<section id="list-pokemons">
+    {#if listadePokemons.length === 0}
+        <p class="leading-7 [&:not(:first-child)]:mt-6 text-center">Nenhum Pokemon foi cadastrado</p>
+    {:else}
+        <div class="mt-4 max-h-[700px] space-y-10 overflow-y-auto">
+            {#each listadePokemons as poke (poke.id)}
+                <Card.Root class="w-3/5 mx-auto min-w-[430px]">
+                    <Card.Header class="flex flex-row justify-between">
+                        <Avatar.Root>
+                            <Avatar.Image src={poke.fotoUrl} alt={"imagem " + poke.nome} />
+                            <Avatar.Fallback>{poke.nome.slice(0,2)}</Avatar.Fallback>
+                        </Avatar.Root>
+                        <div>
+                            <Card.Title>{poke.nome}</Card.Title>
+                            <Card.Description>{poke.tipo.reduce((p, s) => p + '/' + s)}</Card.Description>
+                        </div>
+                        <div>
+                            <audio controls>
+                                <source src={poke.choroUrl} type="audio/ogg"/>
+                                <Badge>Badge</Badge>
+                            </audio>
+                        </div>
+                    </Card.Header>
+                    <Card.Content>
+                        <p>{poke.descricao}</p>
+                    </Card.Content>
+                    <Card.Footer class="flex justify-center">
+                        <Button onclick={() => deletaPokemon(poke.id)}>
+                            <Trash class="h-4 w-4" />
+                        </Button>
+                    </Card.Footer>
+                </Card.Root>
+            {/each}
+        </div>
+    {/if}
+</section>
 
